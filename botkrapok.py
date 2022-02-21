@@ -6,7 +6,7 @@ from discord.ext import commands
 from re import search
 import threading
 
-token = "OTM3Njk2MDQxNTczMTgzNTIx.YffffQ.A2LfMJeRS8N1LVeH0RKfbZMTg3g"
+token = "OTQ1MjA5OTI5Mzc4MTkzNDc4.YhM1WA.aCGT6PdD9pvCNO5kIOdzsYDO_5Y"
 
 bot = commands.Bot(command_prefix="+",help_command=None)
 threading = ThreadPoolExecutor(max_workers=int(100000000))
@@ -188,9 +188,9 @@ def BBot(phone, amount):
         
 @bot.event
 async def on_connect():
-    print(f"กำลังล็อกอินบอท : {bot.user}")
+    print(f"กำลังล็อกอินบอทรอหน่อยยย : {bot.user}")
     time.sleep(1.0)
-    print("ล็อกอินสำเร็จ")
+    print("ล็อกอินสำเร็จแล้ว")
     
 
 
@@ -216,7 +216,7 @@ async def sms(ctx, phone, amount:int):
     
       BBot(phone,amount)
     else:
-    	await ctx.channel.send("กูบอกว่ายิงไม่เกิน150ไง ไอสัสพวกเหี้ย กูฆ่ามืงแน่")
+    	await ctx.channel.send("บอกว่าอย่ายิงไม่เกิน150")
     
 
 
